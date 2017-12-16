@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //не уверен, что правильно понял задание...
+    while (true) {
+        var x;
+        var y;
+        var a = prompt("введите число x");
+        if (!a) {
+            break;
+        }
+        var b = prompt("введите число y");
+        if (a > b) {
+            x = b;
+            y = a;
+            alert("x = " + x + ", " + " y = " + y);
+        }
+        else {
+            x = a;
+            y = b;
+            alert("x = " + x + ", " + " y = " + y);
+        }
+    }
+</script>
+</body>
+</html>
