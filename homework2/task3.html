@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    while (true) {
+        var month = prompt("выберите месяц: \n1 - январь; \n2 - февраль; \n3 - март; \n4 - апрель; \n5 - май; \n6 - июнь" +
+                "\n7 - июль; \n8 - август; \n9 - сентябрь; \n10 - октябрь; \n11 - ноябрь; \n12 - декабрь");
+        if (!month) {
+            break;
+        }
+        switch (month) {
+            case "1":
+            case "2":
+            case "12":
+                alert("зима");
+                break;
+            case "3":
+            case "4":
+            case "5":
+                alert("весна");
+                break;
+            case "6":
+            case "7":
+            case "8":
+                alert("лето");
+                break;
+            case "9":
+            case "10":
+            case "11":
+                alert("осень");
+                break;
+            default:
+                alert("ошибка")
+        }
+    }
+</script>
+</body>
+</html>

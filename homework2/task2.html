@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var x, y, z;
+    alert("сейчас мы узнаем является ли ваш треугольник прямоугольным");
+    x = +prompt("введите значение координаты x");
+    y = +prompt("введите значение координаты y");
+    z = +prompt("введите значение координаты z");
+    x = Math.pow(x,2);
+    y = Math.pow(y,2);
+    z = Math.pow(z,2);
+    if ((x + y === z) || (x + z === y) || (y + z === x)) {
+       alert("ваш треугольник прямоугольный");
+    } else {
+        alert("ваш треугольник не прямоугольный");
+    }
+</script>
+</body>
+</html>

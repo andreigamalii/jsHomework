@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    while (true) {
+        var measure = prompt("выберите единицу измерения: \n1 - дециметр; \n2 - километр; \n3 - метр; \n4 - миллиметр; \n5 - сантиметр;");
+        var number = prompt("выберите число");
+        if (!measure) {
+            break;
+        }
+        switch (measure) {
+            case "1":
+                alert("длина отрезка L составляет: " + number / 10 + "м");
+                break;
+            case "2":
+                alert("длина отрезка L составляет: " + number * 1000 + "м");
+                break;
+            case "3":
+                alert("длина отрезка L составляет: " + number + "м");
+                break;
+            case "4":
+                alert("длина отрезка L составляет: " + number / 1000 + "м");
+                break;
+            case "5":
+                alert("длина отрезка L составляет: " + number / 100 + "м");
+                break;
+            default:
+                alert("ошибка");
+        }
+    }
+</script>
+</body>
+</html>
