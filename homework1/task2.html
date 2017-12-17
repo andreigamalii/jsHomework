@@ -6,15 +6,13 @@
 </head>
 <body>
 <script>
-     while (true) {
-         var number = prompt("введите число в диапазоне от -999 до 999");
-         if (!number) {
-             break;
-         }
+
+         var number = parseInt(prompt("введите число в диапазоне от -999 до 999"));
+
          if ((number > 999) || (number < -999)) {
              alert("число не находится в диапазоне от -999 до 999");
          }
-         if (number == 0) {
+         if (number === 0) {
              alert("нулевое число");
          }
          if ((number < -99) && (number >= -999)) {
@@ -35,10 +33,7 @@
          if ((number > 99) && (number <= 999 )) {
              alert("положительное трехзначное число");
          }
-         if (number.match(/^[-\+]?\d+/) === null) {
-             alert("вы ввели не число");
-         }
-     }
+
 </script>
 </body>
 </html>
