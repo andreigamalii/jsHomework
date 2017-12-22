@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var src = prompt("Введите строку");
+    var sym = prompt("введите символ");
+    var src2 = "";
+    for ( var i = 0; i < src.length; i++) {
+        src2 += src[i];
+        if (src[i] === sym) {
+            src2 += sym;
+        }
+    }
+    alert("строка: " + src + ", символ: " + sym + ", новая строка: " + src2);
+</script>
+</body>
+</html>
