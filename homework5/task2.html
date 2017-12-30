@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function connectArr(array) {
+        var x = array.concat();
+        for(var i = 0; i < x.length; i++) {
+            for(var j = i+1; j < x.length; j++) {
+                if(x[i] === x[j])
+                    x.splice(j--, 1);
+            }
+        }
+
+        return x;
+    }
+
+    var arr1 = [1, 2, 3];
+    var arr2 = [2, 3, 4, 5];
+    var arr3 = connectArr(arr1.concat(arr2));
+    alert(arr3);
+</script>
+</body>
+</html>
