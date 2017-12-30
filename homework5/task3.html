@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var num = parseInt(prompt("сколько вывести чисел Фибоначчи?"));
+
+    function f(num){
+        var a = [];
+        a[0] = 1;
+        a[1] = 1;
+        a[2] = 2;
+        for (var i = 3; i < num; i++) {
+            a[i]=a[i-2]+a[i-1];
+        }
+
+        return a.slice(0,num);
+    }
+
+    alert(f(num));
+
+</script>
+</body>
+</html>
