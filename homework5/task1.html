@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var student = {
+        name: "Andrei",
+        last_name: "Gamalii",
+        hobbies: ["la", "lala", "lalala"],
+        university: "itmo"
+    };
+
+    document.write("Student Object: " + "<br><br>");
+
+    function f() {
+    for (var i in student) {
+        document.write(i + ": " + student[i] + "<br>");
+    }
+
+}
+f();
+</script>
+</body>
+</html>
