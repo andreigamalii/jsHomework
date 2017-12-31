@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num = prompt("введите число");
+
+    var fctr = function(n) {
+        if(n === 0) {
+            return 1;
+        } else {
+            return n * fctr(n - 1);
+        }
+    };
+
+    alert("факториал: " + fctr(num));
+</script>
+</body>
+</html>

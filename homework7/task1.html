@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div id="hours"></div>
+<div id="minutes"></div>
+<div id="seconds"></div>
+<script>
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("hours").innerHTML = h + " :";
+        document.getElementById("minutes").innerHTML = m + " :";
+        document.getElementById("seconds").innerHTML = s;
+        var hrs = document.getElementById("hours");
+        var mnts = document.getElementById("minutes");
+        var scnds = document.getElementById("seconds");
+        hrs.style.color= "blue";
+        mnts.style.color = "green";
+        scnds.style.color = "pink";
+
+        var t = setTimeout(function() {
+            startTime()
+        }, 500);
+    }
+    startTime();
+</script>
+</body>
+</html>
