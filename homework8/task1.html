@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .blue {
+            background: blue;
+            height: 200px;
+            width: 200px;
+        }
+        .red {
+            background: red;
+            height: 200px;
+            width: 200px;
+        }
+        .green {
+            background: green;
+            height: 200px;
+            width: 200px;
+        }
+        div {
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1" class="blue" onclick="f()"></div>
+    <div id="div2" class="red" onclick="ff()"></div>
+<script>
+    function f() {
+        document.getElementById("div1").classList.toggle("blue");
+        document.getElementById("div1").classList.toggle("green");
+    }
+
+    function ff() {
+        document.getElementById("div2").classList.toggle("red");
+        document.getElementById("div2").classList.toggle("green");
+    }
+</script>
+</body>
+</html>
