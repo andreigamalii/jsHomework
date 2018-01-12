@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    button {
+        height: 60px;
+        width: 600px;
+        background: violet;
+        color: white;
+        font-size: 30px;
+        display: block;
+    }
+</style>
+<body>
+<button id="click" onclick="f()">0</button>
+    <script>
+        var clicks = 0;
+        function f() {
+            clicks++;
+            document.getElementById("click").innerHTML = clicks;
+        }
+    </script>
+</body>
+</html>
